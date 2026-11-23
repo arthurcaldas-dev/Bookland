@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Livraria do Ancião — histórias que atravessam o tempo.">
+  <title>Livraria do Ancião</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announcement">
+    ✦ Frete grátis em compras acima de R$ 149 ✦
+  </div>
+
+  <header class="header">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark">LB</span>
+      <span>
+        <strong>Livraria BookLand</strong>
+        <small>HISTÓRIAS QUE ATRAVESSAM O TEMPO</small>
+      </span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="#inicio">Início</a>
+      <a href="#catalogo">Livros</a>
+      <a href="#sobre">Nossa história</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button" id="search-toggle">⌕</button>
+      <button class="cart-button" id="cart-open">
+        Sacola <span id="cart-count">0</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">UM UNIVERSO ENTRE CAPAS</span>
+
+        <h1>Todo livro guarda<br>um <em>novo mundo.</em></h1>
+
+        <p>
+          Encontre sua próxima grande história em uma
+          livraria feita para quem acredita na magia de ler.
+        </p>
+
+        <a class="primary-button" href="#catalogo">
+          Explorar catálogo <span>↗</span>
+        </a>
+
+        <div class="hero-note">
+          <span class="note-line"></span>
+          <span>Desde sempre, apaixonados por boas histórias.</span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="sun-disc"></div>
+        <div class="hero-image"></div>
+
+        <div class="floating-quote">
+          “Uma sala sem livros<br>é como um corpo sem alma.”
+          <small>— Cícero</small>
+        </div>
+
+        <div class="hero-stamp">
+          EST. MMXXIV<br>
+          <b>✦</b><br>
+          BOOKS & STORIES
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div>
+        <span>✧</span>
+        <p>
+          <strong>Curadoria especial</strong>
+          <small>Livros escolhidos a dedo</small>
+        </p>
+      </div>
+
+      <div>
+        <span>♧</span>
+        <p>
+          <strong>Novas descobertas</strong>
+          <small>Histórias para todo leitor</small>
+        </p>
+      </div>
+
+      <div>
+        <span>♡</span>
+        <p>
+          <strong>Feito por leitores</strong>
+          <small>Paixão em cada detalhe</small>
+        </p>
+      </div>
+    </section>
+
+    <section class="catalog section-wrap" id="catalogo">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">A ESTANTE DO MOMENTO</span>
+          <h2>Encontre sua próxima leitura</h2>
+        </div>
+
+        <label class="search-box" id="search-box">
+          <span>⌕</span>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Buscar por título ou autor..."
+          >
+        </label>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="Todos">Todos os livros</button>
+        <button class="filter" data-category="Clássicos">Clássicos</button>
+        <button class="filter" data-category="Fantasia">Fantasia</button>
+        <button class="filter" data-category="Ficção">Ficção</button>
+        <button class="filter" data-category="Mistério">Mistério</button>
+        <button class="filter" data-category="Desenvolvimento">Desenvolvimento</button>
+      </div>
+
+      <div class="product-grid" id="product-grid"></div>
+
+      <p class="empty-state" id="empty-state" hidden>
+        Nenhum livro encontrado.
+      </p>
+    </section>
+
+    <section class="quote-banner">
+      <span class="quote-mark">“</span>
+      <p>
+        Há mundos que só existem<br>
+        quando <em>abrimos um livro.</em>
+      </p>
+      <span class="quote-caption">
+        LIVRARIA BOOKLAND · UM CONVITE À LEITURA
+      </span>
+    </section>
+
+    <section class="about section-wrap" id="sobre">
+      <div class="about-image"></div>
+
+      <div class="about-copy">
+        <span class="eyebrow">MAIS QUE UMA LIVRARIA</span>
+
+        <h2>Um lugar para<br>se perder em histórias.</h2>
+
+        <p>
+          A Livraria BookLand nasceu de uma ideia simples:
+          aproximar pessoas de livros que deixam marcas.
+          Aqui, cada página é um convite para conhecer novos
+          lugares, ideias e personagens.
+        </p>
+
+        <a href="#catalogo" class="text-link">
+          Descubra nossas estantes →
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#inicio">
+      <span class="brand-mark">LB</span>
+      <span>
+        <strong>Livraria BookLand</strong>
+        <small>HISTÓRIAS QUE ATRAVESSAM O TEMPO</small>
+      </span>
+    </a>
+
+    <p>Feita de leitores, para leitores.</p>
+
+    <small>
+      © 2026 Livraria BookLand · Projeto fictício escolar
+    </small>
+  </footer>
+
+  <!-- CARRINHO -->
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="drawer-head">
+      <div>
+        <span class="eyebrow">SUA SELEÇÃO</span>
+        <h2>Sacola de livros</h2>
+      </div>
+      <button class="close-button" id="cart-close">×</button>
+    </div>
+
+    <div class="cart-items" id="cart-items"></div>
+
+    <div class="cart-bottom">
+      <div class="subtotal">
+        <span>Subtotal</span>
+        <strong id="cart-total">R$ 0,00</strong>
+      </div>
+
+      <p class="cart-disclaimer">
+        Frete não incluído nesta demonstração.
+      </p>
+
+      <button class="checkout-button" id="checkout-button">
+        Finalizar pedido
+      </button>
+    </div>
+  </aside>
+
+  <!-- CHECKOUT -->
+
+  <div class="checkout-modal" id="checkout-modal">
+    <div class="checkout-panel">
+
+      <div class="checkout-header">
+        <div>
+          <span class="eyebrow">LIVRARIA BOOKLAND</span>
+          <h2>Finalizar pedido</h2>
+        </div>
+
+        <button class="close-button" id="checkout-close">×</button>
+      </div>
+
+      <form id="checkout-form">
+
+        <h3>Dados pessoais</h3>
+
+        <div class="form-grid">
+
+          <label>
+            Nome
+            <input type="text" name="nome" autocomplete="given-name" required>
+          </label>
+
+          <label>
+            Sobrenome
+            <input type="text" name="sobrenome" autocomplete="family-name" required>
+          </label>
+
+          <label class="full">
+            E-mail
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+
+          <label class="full">
+            Telefone
+            <input type="tel" name="telefone" autocomplete="tel" required>
+          </label>
+
+        </div>
+
+        <h3>Endereço de entrega</h3>
+
+        <div class="form-grid">
+
+          <label>
+            CEP
+            <input type="text" name="cep" autocomplete="postal-code" required>
+          </label>
+
+          <label>
+            Estado
+            <input type="text" name="estado" autocomplete="address-level1" required>
+          </label>
+
+          <label>
+            Cidade
+            <input type="text" name="cidade" autocomplete="address-level2" required>
+          </label>
+
+          <label>
+            Bairro
+            <input type="text" name="bairro" required>
+          </label>
+
+          <label class="full">
+            Rua
+            <input type="text" name="rua" autocomplete="street-address" required>
+          </label>
+
+          <label>
+            Número
+            <input type="text" name="numero" required>
+          </label>
+
+          <label>
+            Complemento
+            <input type="text" name="complemento">
+          </label>
+
+        </div>
+
+        <div class="checkout-summary">
+          <span>Total da compra</span>
+          <strong id="checkout-total">R$ 0,00</strong>
+        </div>
+
+        <button type="submit" class="checkout-button">
+          Gerar pagamento PIX
+        </button>
+
+      </form>
+
+      <!-- TELA DO PIX -->
+
+      <section id="pix-result" hidden>
+
+        <div class="pix-success">
+          <span>✦</span>
+          <h3>Seu PIX está pronto!</h3>
+          <p>Escaneie o QR Code ou copie o código abaixo.</p>
+        </div>
+
+        <div class="pix-value">
+          <small>VALOR DO PEDIDO</small>
+          <strong id="pix-total">R$ 0,00</strong>
+        </div>
+
+        <div class="pix-qr" id="pix-qrcode"></div>
+
+        <label class="pix-label">
+          Código PIX copia e cola
+          <textarea id="pix-code" readonly></textarea>
+        </label>
+
+        <button type="button" class="checkout-button" id="copy-pix">
+          Copiar código PIX
+        </button>
+
+        <p class="pix-warning">
+          Esta demonstração não confirma automaticamente o pagamento.
+          Confira os dados do recebedor no aplicativo do seu banco.
+        </p>
+
+        <button type="button" class="back-button" id="back-to-store">
+          Voltar à loja
+        </button>
+
+      </section>
+
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <!-- BIBLIOTECA DE QR CODE -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
